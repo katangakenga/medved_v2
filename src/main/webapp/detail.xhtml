@@ -21,10 +21,20 @@
                                 <h:inputText value="#{flowMedvedModel.aktualnyMedved.meno}" id="email">
                                     <f:validator validatorId="medvede.service.EmailValidator"/>
                                 </h:inputText>
+
+                                <h:message for="email"/>
+
+                                <h:outputText value="Vek medveďa:"/>
+                                <h:inputText value="#{flowMedvedModel.aktualnyMedved.vek}" id="vek">
+                                    <f:validator validatorId="medvede.service.EmailValidator"/>
+                                </h:inputText>
+
+                                <h:message for="email"/>
+
                                 <h:commandButton class="btn" value="Ulož meno"
                                                  action="#{medvedAction.ulozMenoMedveda}" actionListener="#{flowMedvedAction.endConversation()}">
                                 </h:commandButton>
-                                <h:message for="email"/>
+
                             </h:form>
                         </div>
                     </div>

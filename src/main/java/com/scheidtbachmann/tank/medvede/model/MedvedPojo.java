@@ -7,10 +7,12 @@ public class MedvedPojo {
 
   private Long id;
   private String meno;
+  private Long vek;
 
-  public MedvedPojo(final Long id, final String meno) {
+  public MedvedPojo(final Long id, final String meno, final Long vek) {
     this.id = id;
     this.meno = meno;
+    this.vek = vek;
   }
 
   public Long getId() {
@@ -29,8 +31,12 @@ public class MedvedPojo {
     this.meno = meno;
   }
 
+  public Long getVek() {return vek; }
+
+  public void setVek(final Long vek) {this.vek = vek; }
+
   public String toString(){
-    return meno + id;
+    return vek + meno + id;
   }
 }
 

@@ -12,8 +12,8 @@ import java.util.List;
 @ApplicationScoped
 public class MedvedDao {
 
-  private static MedvedPojo[] lesneMedvede = new MedvedPojo[]{new MedvedPojo(1L, "Macko Usko")};
-  private static MedvedPojo[] kontaineroveMedvede = new MedvedPojo[]{new MedvedPojo(2L, "Macko PU"), new MedvedPojo(3L, "Bubu")};
+  private static MedvedPojo[] lesneMedvede = new MedvedPojo[]{new MedvedPojo(1L, "Macko Usko", 7L)};
+  private static MedvedPojo[] kontaineroveMedvede = new MedvedPojo[]{new MedvedPojo(2L, "Macko PU", 8L), new MedvedPojo(3L, "Bubu", 3L)};
 
   public List<MedvedPojo> vratLesneMedvede() {
     return Arrays.asList(lesneMedvede);
